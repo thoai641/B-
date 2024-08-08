@@ -6,24 +6,24 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-blue-900 text-white font-sans">
+<body class="bg-blue-900 text-white font-sans py-6 px-40">
     <!-- Header -->
     <header class=" flex justify-between items-center max-w-[1064px] px-[188px] py[61px]">
         <h1 class="text-2xl font-bold">Portfolio</h1>
-        <nav>
-            <a href="#" class="mx-2">About</a>
-            <a href="#" class="mx-2">Experience</a>
-            <a href="#" class="mx-2">Projects</a>
-            <a href="#" class="mx-2">Contact</a>
+        <nav class="text-xl">
+            <a href="#" class="mx-12 ">About</a>
+            <a href="#" class="mx-12 ">Experience</a>
+            <a href="#" class="mx-12 ">Projects</a>
+            <a href="#" class="mx-12 ">Contact</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="flex flex-col items-center text-center py-20">
-        <div>        
-            <h1 class="text-white font-roboto text-">Hi, I'm Ada</h1>
-            <p class="mb-8">I'm a full-stack developer with 5 years of experience using React and NodeJS. Reach out if you'd like to learn more!</p>
-            <button class="bg-blue-500 text-white py-2 px-6 rounded-full">Contact Me</button>
+    <section class="flex items-center text-center py-5 mx-auto">
+        <div class="text-left mx-8" >        
+            <h1 class=" text-7xl font-bold mb-8">Hi, I'm Ada</h1>
+            <p class="text-3xl font-normal mb-8">I'm a full-stack developer with 5 <br>years of experience using React and NodeJS.<br> Reach out if you'd like to learn more!</p>
+            <button class="bg-blue-500 text-3xl py-2 px-6 rounded-full">Contact Me</button>
         </div>
         <div>
             <img src="assets/imgs/avatar.png" alt="avatar">
@@ -31,101 +31,135 @@
     </section>
 
     <!-- About Section -->
-    <section class="flex flex-col items-center bg-blue-800 p-10 rounded-lg mx-6 mb-10">
+    <section class=" bg-black p-10 text-left rounded-lg mx-6 mb-10">
         <h3 class="text-2xl font-bold mb-4">ABOUT</h3>
-        <div>
-            <img src="assets/imgs/hero.png" alt="avatar">
+        <div class="flex items-center">
+            <div>
+                <img src="assets/imgs/hero.png" alt="avatar">
+            </div>
+        <div class="text-left ">
+            <div class="mb-4 bg-slate-600 flex items-center">
+                <div>
+                    <img src="assets/imgs/frontend.png" alt="">
+                </div>
+                <div>
+                    <h4 class=" font-bold">Frontend Developer</h4>
+                    <p>I'm a front-end developer with experience in building responsive and optimized sites.</p>
+                </div>              
+            </div>
+            <div class="mb-4 flex items-center">
+                <div>
+                    <img src="assets/imgs/back.png" alt="">
+                </div>
+                <div>
+                    <h4 class="font-bold">Backend Developer</h4>
+                    <p>I have experience developing fast and optimized back-end systems and APIs.</p>
+                </div>
+              </div>
+            <div class="mb-4 flex items-center">
+                <div>
+                     <img src="assets/imgs/ui.png" alt="">
+                </div>
+                <div>
+                    <h4 class="font-bold">UI Designer</h4>
+                    <p>I have designed multiple landing pages and have created design systems as well.</p>
+                </div>
+            </div>
         </div>
-        <div class="text-left">
-            <div class="mb-4">
-                <img src="assets/imgs/frontend.png" alt="">
-                <h4 class="font-bold">Frontend Developer</h4>
-                <p>I'm a front-end developer with experience in building responsive and optimized sites.</p>
-            </div>
-            <div class="mb-4">
-                <img src="assets/imgs/back.png" alt="">
-                <h4 class="font-bold">Backend Developer</h4>
-                <p>I have experience developing fast and optimized back-end systems and APIs.</p>
-            </div>
-            <div class="mb-4">
-                <img src="assets/imgs/ui.png" alt="">
-                <h4 class="font-bold">UI Designer</h4>
-                <p>I have designed multiple landing pages and have created design systems as well.</p>
-            </div>
         </div>
+        
     </section>
 
     <!-- Experience Section -->
-    <section class="mx-6 mb-10">
-        <h3 class="">EXPERIENCE</h3>
-        <div class="">
-            <div>
-                <img src="assets/imgs/html.png" alt="HTML">
-                <p>HTML</p>
+    <section class="mx-6 mb-10 ">
+        <h3 class="text-2xl font-bold mb-4">EXPERIENCE</h3>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-800 mb-9 ">
+                    <img src="assets/imgs/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/node.png" alt="Node">
+                    <p>Node</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/graphql.png" alt="GraphQL">
+                    <p>GraphQL</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/mongodb.png" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                <div class="bg-blue-800 mb-9">
+                    <img src="assets/imgs/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
             </div>
-            <div>
-                <img src="assets/imgs/css.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div>
-                <img src="assets/imgs/react.png" alt="React">
-                <p>React</p>
-            </div>
-            <div>
-                <img src="assets/imgs/node.png" alt="Node">
-                <p>Node</p>
-            </div>
-            <div>
-                <img src="assets/imgs/graphql.png" alt="GraphQL">
-                <p>GraphQL</p>
-            </div>
-            <div>
-                <img src="assets/imgs/mongodb.png" alt="MongoDB">
-                <p>MongoDB</p>
-            </div>
-            <div>
-                <img src="assets/imgs/figma.png" alt="Figma">
-                <p>Figma</p>
-            </div>
-        </div>
-        <div class="mt-8">
-            <div class="mb-4">
-                <h4 class="font-bold"><img src="assets/imgs/gg.png" alt="">Software Engineer, Google</h4>
-                <p>Sept 2022 - Present</p>
-                <p>Worked on Google Maps</p>
-                <p>Reduced load times by 50%</p>
-            </div>
-            <div class="mb-4">
-                <h4 class="font-bold"> <img src="assets/imgs/win.png" alt="">UI Designer, Microsoft</h4>
-                <p>Aug 2021 - Aug 2022</p>
-                <p>Worked on Windows 11</p>
-                <p>Designed the control panel</p>
-            </div>
-            <div class="mb-4">
-                <h4 class="font-bold"> <img src="assets/imgs/net.png" alt="">SWE Intern, Netflix</h4>
-                <p>Apr 2020 - Jun 2020</p>
-                <p>Worked on component library</p>
-                <p>Helped create UI components</p>
+
+            <div class="grid gap-4">
+                <div class="mb-4 bg-blue-800 mb-10 flex items-center">
+                    <div>
+                        <img src="assets/imgs/gg.png" alt="">                     
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Software Engineer, Google</h4>
+                        <p>Sept 2022 - Present</p>
+                        <p>Worked on Google Maps</p>
+                        <p>Reduced load times by 50%</p>
+                    </div>
+                </div>
+                <div class="mb-4 bg-blue-800 mb-10 flex items-center">
+                    <div>
+                        <img src="assets/imgs/win.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold"> UI Designer, Microsoft</h4>
+                        <p>Aug 2021 - Aug 2022</p>
+                        <p>Worked on Windows 11</p>
+                        <p>Designed the control panel</p>
+                    </div>
+                </div>
+                <div class="mb-4 bg-blue-800 mb-10 flex items-center">
+                    <div>
+                        <img src="assets/imgs/net.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold"> SWE Intern, Netflix</h4>
+                        <p>Apr 2020 - Jun 2020</p>
+                        <p>Worked on component library</p>
+                        <p>Helped create UI components</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
  <!-- Projects Section -->
- <section class="mx-6 mb-10">
-    <h3 class="text-2xl font-bold mb-4 text-center">PROJECTS</h3>
+ <section class="mx-4 mb-10 max-w-[1064px]">
+    <h3 class="text-2xl font-bold mb-4 text-left">PROJECTS</h3>
     <div class="grid grid-cols-3 gap-4">
         <div class="bg-blue-700 p-4 rounded-lg">
             <img src="assets/imgs/project.png" alt="Project A" class="mb-4">
             <h4 class="font-bold mb-2">Project A</h4>
             <p class="mb-2">This is a project made to learn the latest languages by building an app.</p>
             <div class="flex justify-between">
-                <span class="bg-blue-500 py-1 px-2 rounded">React</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Express</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Node</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">React</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Express</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Node</span>
             </div>
             <div class="mt-4 flex justify-between">
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Demo</button>
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Source</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Demo</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Source</button>
             </div>
         </div>
         <div class="bg-blue-700 p-4 rounded-lg">
@@ -133,13 +167,13 @@
             <h4 class="font-bold mb-2">Project B</h4>
             <p class="mb-2">This is a project made to learn the latest languages by building an app.</p>
             <div class="flex justify-between">
-                <span class="bg-blue-500 py-1 px-2 rounded">React</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Express</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Node</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">React</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Express</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Node</span>
             </div>
             <div class="mt-4 flex justify-between">
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Demo</button>
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Source</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Demo</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Source</button>
             </div>
         </div>
         <div class="bg-blue-700 p-4 rounded-lg">
@@ -147,26 +181,37 @@
             <h4 class="font-bold mb-2">Project C</h4>
             <p class="mb-2">This is a project made to learn the latest languages by building an app.</p>
             <div class="flex justify-between">
-                <span class="bg-blue-500 py-1 px-2 rounded">React</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Express</span>
-                <span class="bg-blue-500 py-1 px-2 rounded">Node</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">React</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Express</span>
+                <span class="bg-blue-900 py-1 px-2 rounded-full">Node</span>
             </div>
             <div class="mt-4 flex justify-between">
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Demo</button>
-                <button class="bg-blue-500 text-white py-1 px-4 rounded">Source</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Demo</button>
+                <button class="bg-blue-500 text-white py-1 px-4 rounded-full">Source</button>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<footer class="bg-blue-800 p-10 text-center">
-    <h3 class="text-2xl font-bold mb-4">Contact</h3>
-    <p class="mb-6">Feel free to reach out!</p>
-    <div class="flex justify-center space-x-8">
-        <a href="mailto:myemail@email.com" class="hover:underline"><img src="assets/imgs/gmail.png" alt="">myemail@email.com</a>
-        <a href="https://linkedin.com/myname" class="hover:underline"><img src="assets/imgs/linkedin.png" alt="">linkedin.com/myname</a>
-        <a href="https://github.com/myname" class="hover:underline"><img src="assets/imgs/github.png" alt="">github.com/myname</a>
+<footer class="bg-blue-800 p-10 text-center flex items-center">
+    <div>
+        <h3 class="text-3xl font-bold mb-2 text-left">Contact</h3>
+        <p class="mb-6 text-left">Feel free to reach out!</p>
+    </div>
+    <div class=" ">
+        <div class="flex items-center">
+        <img src="assets/imgs/gmail.png" alt="">
+        <a href="mailto:myemail@email.com" class="hover:underline">myemail@email.com</a>
+        </div>
+        <div class="flex items-center">
+            <img src="assets/imgs/linkedin.png" alt="">
+            <a href="https://linkedin.com/myname" class="hover:underline">linkedin.com/myname</a>
+        </div>
+        <div class="flex items-center">
+            <img src="assets/imgs/github.png" alt="">
+            <a href="https://github.com/myname" class="hover:underline">github.com/myname</a>
+        </div>
     </div>
 </footer>
 
